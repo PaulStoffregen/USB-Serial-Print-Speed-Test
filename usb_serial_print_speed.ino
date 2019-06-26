@@ -28,7 +28,7 @@ uint32_t count_per_second;
 void setup() {
   Serial.begin(1000000); // edit for highest baud your board can use
   while (!Serial) ;
-  count = 10000000;
+  count = 10000000; // starting with 8 digits gives consistent chars/line
   prior_count = count;
   count_per_second = 0;
   prior_msec = millis();
